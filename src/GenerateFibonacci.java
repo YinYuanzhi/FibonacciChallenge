@@ -72,11 +72,11 @@ public class GenerateFibonacci {
 		int size = fibonacci.size();
 		BigInteger[] sortedFibonacci = new BigInteger[size];
 		//index that point to location of next larger even number
-		int even = (size - 1)/3 - 1;
+		int even = (size - 1)/3;
 		//index that point to location of next larger odd number
-		int odd = size - 2;
+		int odd = size - 1;
 		BigInteger two = new BigInteger("2");
-		for(int i = 1; i < size; i++) {
+		for(int i = 0; i < size; i++) {
 			if(fibonacci.get(i).mod(two).intValue()==0) {
 				sortedFibonacci[even] = fibonacci.get(i);
 				even --;
@@ -85,7 +85,6 @@ public class GenerateFibonacci {
 				odd --;
 			}
 		}
-		sortedFibonacci[size-1] = fibonacci.get(0);
 		return Arrays.asList(sortedFibonacci);
 	}
 	
