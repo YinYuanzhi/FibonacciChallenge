@@ -3,7 +3,7 @@ I used jersy API and jackson API in this REST web services. The project is codin
 Please go to localhost:8080/Fibonacci/rest/generatefibonacci for further instructions.
 
 ## How to use Dockerfile
-Please ensure installed the docker and Java before the following steps. You can go to localhost:8080/Fibonacci/rest/generatefibonacci/calculate to POST json files or modify the path ,like localhost:8080/Fibonacci/rest/generatefibonacci/10 to get a json result.
+Please ensure installed the docker and Java before the following steps. You can go to localhost:8080/Fibonacci/rest/generatefibonacci/calculate to POST json files by using postman or modify the path ,like localhost:8080/Fibonacci/rest/generatefibonacci/10 to get a json result.
 
 1. Download Dockerfile and Fibonacci.war and put them into the same folder, eg. /webapp
 2. use following command in command line interface to build the container:
