@@ -14,3 +14,4 @@ sudo docker build -t tomcat .
 sudo docker run -p 8080:8080 tomcat
 ```
 4. use browser to go to localhost:8080/Fibonacci/rest/generatefibonacci for further instructions.
+You can go to localhost:8080/Fibonacci/rest/generatefibonacci/calculate to POST json files or modify the path ,like localhost:8080/Fibonacci/rest/generatefibonacci/10 to get a json result.
